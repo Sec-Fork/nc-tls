@@ -1,0 +1,5 @@
+CONNECT www.baidu.com 443 
+
+GET /test HTTP/1.1
+Host: www.baidu.com
+

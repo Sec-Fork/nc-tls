@@ -1,0 +1,14 @@
+GET /?id=1 HTTP/1.1
+Host: www.baidu.com 
+
+GET /?id=2 HTTP/1.1
+Host: www.baidu.com 
+
+GET /?id=3 HTTP/1.1
+Host: www.baidu.com 
+
+GET /?id=4 HTTP/1.1
+Host: www.baidu.com 
+
+GET /?id=5 HTTP/1.1
+Host: www.baidu.com 
