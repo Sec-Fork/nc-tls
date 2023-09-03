@@ -1,4 +1,4 @@
-vim流挖洞选手使用go编写的一个TLS 连接版 NC 
+vim流挖洞选手使用go编写的一个TLS 连接版 NC ,用于连续发送多个https请求报文, 仅支持macOS和Linux
 
 ## 安装方法:
 ```
