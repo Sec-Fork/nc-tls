@@ -11,13 +11,13 @@ go install "github.com/ShangRui-hash/nc-tls"
 nc-tls -t www.baidu.com -p 443 
 ```
 
-此时将会建立本机到www.baidu.com 443 端口的TLS连接， 并且TLS连接输出对接到标准输出，标准输入对接到TLS的连接的输入，也就是说，现在你可以直接通过TLS连接来发送https请求报文了, 并且你向标准输入中输入多少字符，就发送多少字符。
+此时将会建立本机到www.baidu.com 443 端口的TLS连接， 并且TLS连接的输出对接到标准输出，标准输入对接到了TLS的连接的输入，也就是说，现在你可以直接通过TLS连接来发送https请求报文了, 并且你向标准输入中输入多少字符，就发送多少字符。一旦服务器端返回了响应报文，将会立即回显到标准输出中。
 
 ![](snapshot.jpg)
 
 该TLS连接会长时间保持，除非服务器端主动关闭连接，例如：http响应码返回400时，连接可能会被服务器端主动关闭
 
-好玩的地方在于，你可以使用同一个TLS连接，连续发送多条HTTP request
+你可以使用同一个TLS连接，连续发送多条HTTP request，例如:
 
 ```sh 
 cat ./demo/request.http | tls-nc -t www.baidu.com -p 443
